@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:heavy_weighted_pressure_plate",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "minecraft:iron_ingot",
+    "data": 0,
+    "count": 2
+  }
+}

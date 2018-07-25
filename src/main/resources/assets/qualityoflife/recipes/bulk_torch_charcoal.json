@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C C",
+    "CWC",
+    " W "
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:coal",
+      "data": 1
+    },
+    "W": {
+      "type": "forge:ore_dict",
+      "ore": "plankWood"
+    }
+  },
+  "result": {
+    "item": "minecraft:torch",
+    "data": 0,
+    "count": 16
+  }
+}

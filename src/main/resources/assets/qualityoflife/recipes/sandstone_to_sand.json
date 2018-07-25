@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S"
+  ],
+  "key": {
+    "S": {
+      "type": "forge:ore_dict",
+      "ore": "sandstone"
+    }
+  },
+  "result": {
+    "item": "minecraft:sand",
+    "data": 0,
+    "count": 4
+  }
+}

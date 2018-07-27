@@ -6,10 +6,16 @@
     " W "
   ],
   "key": {
-    "C": {
-      "type": "forge:ore_dict",
-      "ore": "oreCoal"
-    },
+    "C": [
+      {
+        "item": "minecraft:coal",
+        "data": 0
+      },
+      {
+        "item": "minecraft:coal",
+        "data": 1
+      }
+    ],
     "W": {
       "type": "forge:ore_dict",
       "ore": "plankWood"

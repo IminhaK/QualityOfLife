@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  L",
+    " W ",
+    "W  "
+  ],
+  "key": {
+    "W": {
+      "type": "forge:ore_dict",
+      "ore": "plankWood"
+    },
+    "L": {
+      "type": "forge:ore_dict",
+      "ore": "logWood"
+    }
+  },
+  "result": {
+    "item": "exnihilocreatio:hammer_wood",
+    "data": 0,
+    "count": 2
+  }
+}

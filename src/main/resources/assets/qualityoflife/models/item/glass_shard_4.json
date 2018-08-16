@@ -1,0 +1,6 @@
+{
+  "parent": "qualityoflife:item/itemGlassShard",
+  "textures": {
+    "layer0": "qualityoflife:items/glass_shard_4"
+  }
+}

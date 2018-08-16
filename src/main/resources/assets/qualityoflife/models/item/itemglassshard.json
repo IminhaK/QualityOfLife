@@ -1,0 +1,32 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "qualityoflife:items/glass_shard_1"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "qualityoflife:size": 0.2
+      },
+      "model": "qualityoflife:item/glass_shard_1"
+    },
+    {
+      "predicate": {
+        "qualityoflife:size": 0.45
+      },
+      "model": "qualityoflife:item/glass_shard_2"
+    },
+    {
+      "predicate": {
+        "qualityoflife:size": 0.7
+      },
+      "model": "qualityoflife:item/glass_shard_3"
+    },
+    {
+      "predicate": {
+        "qualityoflife:size": 0.95
+      },
+      "model": "qualityoflife:item/glass_shard_4"
+    }
+  ]
+}

@@ -1,8 +1,6 @@
 package net.bloop.qualityoflife;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
@@ -15,7 +13,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-@EventBusSubscriber
+@EventBusSubscriber(modid = QualityOfLife.MODID)
 public class GameEvents {
 
     @SubscribeEvent

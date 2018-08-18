@@ -18,15 +18,12 @@ public class ItemGlassShard extends Item{
     public ItemGlassShard()
     {
         setCreativeTab(CreativeTabs.MISC);
-        addPropertyOverride(new ResourceLocation(QualityOfLife.MODID + ":size"), new IItemPropertyGetter()
+        addPropertyOverride(new ResourceLocation(QualityOfLife.MODID, ":size"), new IItemPropertyGetter()
         {
             @SideOnly(Side.CLIENT)
             public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)
             {
-                if(entityIn != null && entityIn.getActiveItemStack() == stack) {
-                    return stack.getCount() / stack.getMaxStackSize();
-                }
-                return 0.25f;
+                return (float)stack.getCount() / (float)stack.getMaxStackSize();
             }
         });
     }

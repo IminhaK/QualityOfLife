@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GG",
+    "GG"
+  ],
+  "key": {
+    "G": {
+      "item": "qualityoflife:itemglassshard"
+    }
+  },
+  "result": {
+    "item": "minecraft:glass",
+    "data": 0,
+    "count": 1
+  }
+}

@@ -18,7 +18,7 @@ public class ItemGlassShard extends Item{
     public ItemGlassShard()
     {
         setCreativeTab(CreativeTabs.MISC);
-        addPropertyOverride(new ResourceLocation(QualityOfLife.MODID, ":size"), new IItemPropertyGetter()
+        addPropertyOverride(new ResourceLocation(QualityOfLife.MODID, "size"), new IItemPropertyGetter()
         {
             @SideOnly(Side.CLIENT)
             public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)

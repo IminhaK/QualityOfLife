@@ -8,18 +8,20 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 @Mod.EventBusSubscriber(modid = QualityOfLife.MODID)
 public class RegistryEvents {
 
     public static Item itemGlassShard;
+    public static RegistryEvent.Register<Item> itemEvent;
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event)
     {
-        itemGlassShard = (ItemGlassShard)(new ItemGlassShard().setUnlocalizedName("itemGlassShard"));
-        registerItem(itemGlassShard, "itemGlassShard");
+        itemEvent = event;
+
+        itemGlassShard = new ItemGlassShard().setUnlocalizedName("itemGlassShard");
+        registerItem(itemGlassShard, "itemglassshard");
     }
 
     @SubscribeEvent
@@ -28,9 +30,9 @@ public class RegistryEvents {
         ModelLoader.setCustomModelResourceLocation(itemGlassShard, 0, new ModelResourceLocation(QualityOfLife.MODID + ":itemglassshard", "inventory"));
     }
 
-    private static void registerItem(Item varItemName, String varName)
+    private static void registerItem(Item itemName, String name)
     {
-        varItemName.setRegistryName(varName);
-        ForgeRegistries.ITEMS.register(varItemName);
+        itemName.setRegistryName(name);
+        itemEvent.getRegistry().register(itemName);
     }
 }

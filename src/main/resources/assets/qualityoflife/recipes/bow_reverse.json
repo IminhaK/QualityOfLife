@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SW ",
+    "S W",
+    "SW "
+  ],
+  "key": {
+    "S": [
+      {
+        "item": "minecraft:string"
+      }
+    ],
+    "Y":[
+      {
+      "item": "minecraft:stick"
+      }
+    ]
+  },
+  "result": {
+    "item": "minecraft:bow",
+    "count": 1
+  }
+}

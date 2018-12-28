@@ -1,9 +1,11 @@
 package net.bloop.qualityoflife;
 
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Enchantments;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -23,8 +25,9 @@ public class GameEvents {
         World world = event.getPlayer().getEntityWorld();
         IBlockState state = event.getState();
         EntityPlayer player = event.getPlayer();
+        ItemStack holding = player.getHeldItemMainhand();
 
-        if((state.getBlock() == Blocks.GLASS || state.getBlock() == Blocks.STAINED_GLASS) && !world.isRemote && !player.capabilities.isCreativeMode)
+        if((state.getBlock() == Blocks.GLASS || state.getBlock() == Blocks.STAINED_GLASS) && !world.isRemote && !player.capabilities.isCreativeMode && !(EnchantmentHelper.getEnchantmentLevel(Enchantments.SILK_TOUCH, holding) > 0))
         {
             int min = 2;
             int max = 4;

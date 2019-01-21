@@ -7,5 +7,5 @@ public class QualityOfLife
 {
     public static final String MODID = "qualityoflife";
     public static final String NAME = "Quality Of Life";
-    public static final String VERSION = "u8";
+    public static final String VERSION = "u9";
 }
